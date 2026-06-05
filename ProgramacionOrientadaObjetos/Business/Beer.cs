@@ -1,7 +1,8 @@
 ﻿namespace ProgramacionOrientadaObjetos.Business
 {
-    public class Beer
-    {
+    public class Beer : Drink
+    {   
+        private const string Category = "Cerveza";
         // _alcohol es un campo privado, un campo sirve para almacenar información y que
         // sea privado significa que solo se puede acceder a la clase a travez del código de la clase
         private decimal _alcohol;
@@ -22,11 +23,13 @@
         }
 
         // Metodo constructor (tiene el mismo nombre de la clase)
-        public Beer(string name, decimal price, decimal alcohol)
+        public Beer(string name, decimal price, decimal alcohol, int quantity)
+            :base(quantity)
         {
             Name = name;
             Price = price;
             Alcohol = alcohol;
+
         }
 
         // Sobreescritura: La sobreescritura permite sobreescribir metodos de una clase Padre desde una clase hijo
@@ -47,6 +50,11 @@
         public string GetInfo(int number)
         {
             return number + " " + GetInfo();
+        }
+
+        public override string GetCategory()
+        {
+            return Category;
         }
     }
 }
