@@ -29,9 +29,24 @@
             Alcohol = alcohol;
         }
 
-        public string getInfo()
+        // Sobreescritura: La sobreescritura permite sobreescribir metodos de una clase Padre desde una clase hijo
+        // Solo se peuden sobreescribir los emtodos que no tengan parametros de entrada.
+        // Para que un metodo se pueda sobre escribir se usa la palabra reservada "virtual".
+        public virtual string GetInfo()
         {
             return $"Nombre: {Name}, Precio: {Price}, Alcohol: {Alcohol}";
+        }
+
+        // Sobrecarga de metodos, se puede crear umetodos con el mismo nombre y con diferente comportamiento
+        // siempre y cuando los parametros de cada metodo sean diferentes
+        public string GetInfo(string message)
+        {
+            return message + " " + GetInfo() ;
+        }
+
+        public string GetInfo(int number)
+        {
+            return number + " " + GetInfo();
         }
     }
 }

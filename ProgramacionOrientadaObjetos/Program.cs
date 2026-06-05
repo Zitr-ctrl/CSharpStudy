@@ -6,5 +6,7 @@ Beer erdingerBeer = new Beer("Erdinger", 10, -9);
 ExpiringBeer delirium = new ExpiringBeer("Delirium", 25, 30, new DateTime(2029, 12, 23));
 
 //Console.WriteLine($"{coronaBeer.Name} tiene un precio de {coronaBeer.Price}");
-Console.WriteLine(erdingerBeer.getInfo());
-Console.WriteLine(delirium.getInfo());
+Console.WriteLine(erdingerBeer.GetInfo());
+Console.WriteLine(delirium.GetInfo());
+Console.WriteLine(delirium.GetInfo("Una cerveza que caduca: "));
+Console.WriteLine(delirium.GetInfo(1207695030));
