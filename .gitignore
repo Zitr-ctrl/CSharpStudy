@@ -1,0 +1,81 @@
+# Build Results
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Bb]in/
+[Oo]bj/
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Rider
+.idea/
+
+# VS Code
+.vscode/
+
+# NuGet
+packages/
+*.nupkg
+
+# ASP.NET Core
+appsettings.Development.json
+
+# Logs
+*.log
+
+# Test Results
+TestResults/
+
+# Publish
+publish/
+
+# IIS Express
+iisexpress/
+
+# Entity Framework
+*.dbmdl
+
+# Resharper
+_ReSharper*/
+*.[Rr]e[Ss]harper
+
+# Azure
+PublishProfiles/
+
+# Node
+node_modules/
+
+# npm logs
+npm-debug.log*
+
+# Temporary files
+*.tmp
+*.temp
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# Mac
+.DS_Store
+
+# Coverage
+coverage/
+*.coverage
+*.coveragexml
+
+# JetBrains Rider
+.idea/
+
+# SQL LocalDB
+*.mdf
+*.ldf
+
+# Generated files
+Generated/
