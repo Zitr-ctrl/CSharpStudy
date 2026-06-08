@@ -23,3 +23,25 @@ Animal benji = new Perro("Benji", 8, 63, "perro cruzado");
 Console.WriteLine(benji.getInfo());
 Console.WriteLine(benji.Sound());
 Console.WriteLine(benji.Tipo());
+
+
+var elements = new Colletion<int>(3);
+elements.Add(100);
+elements.Add(150);
+elements.Add(200);
+elements.Add(500);  
+
+foreach (var element in elements.Get())
+{
+    Console.WriteLine(element);
+}
+
+var names = new Colletion<string>(2);
+names.Add("Josue");
+names.Add("Jennifer");
+names.Add("Erick");
+
+foreach (var name in names.Get())
+{
+    Console.WriteLine(name);
+}
