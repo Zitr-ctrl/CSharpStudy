@@ -9,6 +9,8 @@
         // Las propiedades ayudan a guardar y devolver datos, por convencion comienzan siempre en mayuscula
         public string Name { get; set; }
         protected decimal Price { get; set; }
+
+        public static int QuantityObjects;
         public decimal Alcohol
         {
             get { return _alcohol; }
@@ -29,6 +31,7 @@
             Name = name;
             Price = price;
             Alcohol = alcohol;
+            QuantityObjects++;
 
         }
 
